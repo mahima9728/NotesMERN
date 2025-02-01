@@ -1,8 +1,15 @@
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import LAndingPage from "./screens/LandingPage/LAndingPage";
+
 function App() {
-  const num = 28;
   return (
     <>
-      <h1>Hello Devs, {num}</h1>
+      <Header></Header>
+      <main>
+        <LAndingPage></LAndingPage>
+      </main>
+      <Footer></Footer>
     </>
   );
 }
