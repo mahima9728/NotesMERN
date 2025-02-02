@@ -1,10 +1,10 @@
 const notes = [
   {
     _id: "1",
-    title: "Day 1 of college",
+    title: "Day 1 of Job",
     content:
-      "I made a few new friends and introduced myself to a lot of new teachers.",
-    category: "College",
+      "I made a few new friends and introduced myself to a lot of new colleagues.",
+    category: "Job",
   },
   {
     _id: "2",
@@ -19,7 +19,7 @@ const notes = [
     category: "Entertainment",
   },
   {
-    _id: 4,
+    _id: "4",
     title: "Started React JS",
     content:
       "Made my first App in React JS, feels awesome to learn something new. I aim to be a full stack dev someday",
@@ -27,4 +27,4 @@ const notes = [
   },
 ];
 
-export default notes;
+module.exports = notes;

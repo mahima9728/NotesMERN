@@ -1,8 +1,11 @@
 const express = require("express");
 const notes = require("./data/notes");
 const dotenv = require("dotenv");
+const cors = require("cors");
 
 const app = express();
+
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("API is running...");
@@ -22,7 +25,7 @@ app.get("/api/notes/:id", (req, res) => {
   }
 });
 
-const PORT = process.env.PORt || 5000;
+const PORT = process.env.PORT || 5000;
 
 app.listen(
   PORT,
